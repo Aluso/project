@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LazQ6F5qWMaoUEKf5Nrmf6fVr7z4LC4z5FLw5j5iPbsf5z5HPOF5YF9c2er1cHfF"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        <form id="search-form">
+          <input
+            type="search engine"
+            placeholder="Enter city"
+            id="city-input"
+            autofocus
+          />
+          <button type="button" class="btn btn-primary">Search</button>
+          <button
+            type="button"
+            id="current-location-button"
+            class="btn btn-success"
+          >
+            Current
+          </button>
+        </form>
+      </h1>
+      <h2 id="city"></h2>
+      <ul>
+        <li id="date"></li>
+
+        <li id="description"></li>
+      </ul>
+      <div class="clearfix">
+        <div class="float-left">
+          <span class="temperature" id="temperature"></span>
+          <span class="units">℃</span>
+        </div>
+      </div>
+      <section>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind: <span id="wind"></span> Km/hr</p>
+      </section>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
